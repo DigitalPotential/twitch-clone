@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
-  return <p>Hello Twitch clone</p>;
+  return <p>Only autheticated users can see this page</p>;
 }
