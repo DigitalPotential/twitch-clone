@@ -60,5 +60,17 @@ export async function POST(req: Request) {
     });
   }
 
+  if (eventType === "user.updated") {
+    await db.user.update({
+      where: {
+        externalUserId: payload.data.id,
+      },
+      data: {
+        username: payload.data.username,
+        imageUrl: payload.data.image_url,
+      },
+    });
+  }
+
   return new Response("", { status: 200 });
 }
