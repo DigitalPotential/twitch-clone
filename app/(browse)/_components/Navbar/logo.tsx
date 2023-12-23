@@ -19,7 +19,7 @@ export const Logo = () => {
 
         <div>
           <p>Gamehub</p>
-          <p>Let&apos;s play</p>
+          <p>God Jul</p>
         </div>
       </div>
     </Link>
